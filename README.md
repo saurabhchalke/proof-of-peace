@@ -1,5 +1,7 @@
 # Zero-Knowledge Proof for Nuclear Disarmament Verification
 
+![proof-of-peace](proof-of-peace.webp)
+
 ## Introduction
 In the realm of nuclear disarmament, verifying the dismantling of nuclear warheads is a complex challenge, marred by the paradox of needing to confirm the authenticity of warheads without revealing sensitive design information. This project is inspired by the innovative approach presented by Boaz Barak, which utilizes Zero Knowledge Proofs (ZKPs) in cryptography to address this challenge.
 
