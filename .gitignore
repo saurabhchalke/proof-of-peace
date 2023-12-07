@@ -127,3 +127,8 @@ data/
 
 # ONNX model files
 # *.onnx
+
+# Circuit files
+*.key
+kzg.srs
+*.compiled

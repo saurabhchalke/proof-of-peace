@@ -15,7 +15,7 @@ We propose a novel verification system using Zero Knowledge Machine Learning (zk
 1. Generating a predictive model that can verify the authenticity of a nuclear warhead based on neutron detection patterns.
 2. Utilizing Zero Knowledge Proofs to ensure that the verification process reveals no information about the warhead's design.
 
-The model is trained on synthetic data representing neutron detection patterns and then converted to a format compatible with zkML using ezkl, a library for zero-knowledge proofs.
+The model is trained on synthetic data representing neutron detection patterns and then converted to a format compatible with zkML using [ezkl](https://ezkl.xyz), a library for zero-knowledge proofs.
 
 ## Tools and Technologies
 - **PyTorch**: For building and training the neural network model.
@@ -25,22 +25,24 @@ The model is trained on synthetic data representing neutron detection patterns a
 
 ## Repository Structure
 - `data_generation.py`: Script for generating synthetic data representing neutron patterns.
+Below is a sample synthetic data created to simulate the neutron detection phase.
+![synthetic-data](synthetic-data.jpeg)
 - `train_model.py`: Defines and trains the Neutron Detector CNN model.
 - `export_onnx.py`: Exports the trained model to the ONNX format.
 - `ezkl_integration.py`: Integrates the ONNX model with ezkl for generating and verifying zero-knowledge proofs.
 
 ## How to Run
 1. **Generate Synthetic Data**: Run `data_generation.py` to create a dataset.
+
+![neutron_detector_cnn_architecture](neutron_detector_cnn.png)
+
 2. **Train the Model**: Execute `train_model.py` to train the Neutron Detector CNN.
 3. **Export to ONNX**: Use `export_onnx.py` to convert the trained model to ONNX format.
 4. **Zero-Knowledge Proof Generation and Verification**: Run `ezkl_integration.py` to generate and verify ZKPs.
 
-## Adding Visuals
-Consider adding diagrams or screenshots here to illustrate:
-- The architecture of the Neutron Detector CNN model.
+Demo of running the ezkl integration script:
 
-![neutron_detector_cnn_architecture](neutron_detector_cnn.png)
-- Sample outputs from the ezkl integration script.
+![proof-of-peace-demo](proof-of-peace-demo.gif)
 
 ## Conclusion and Future Work
 This project represents a groundbreaking application of theoretical cryptographic constructs in the physical world. While it focuses on the cryptographic and machine learning aspects, it forms a crucial component of a larger process in nuclear disarmament verification. Future directions could include scaling the model for more complex scenarios and integrating it with real-world neutron detection data.
